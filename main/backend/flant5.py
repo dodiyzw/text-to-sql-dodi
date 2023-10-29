@@ -37,10 +37,4 @@ def inference2(question_and_table: str) -> str:
     outputs = model.generate(inputs=input_data, num_beams=10,  max_length=512, do_sample=True, top_k=25, temperature=1)
     result = tokenizer.decode(token_ids=outputs[0], skip_special_tokens=True)
     return result
-    
-
-print(inference("find total number of employee and the median salary (50th percentile) of employees from marketing department", {
-    "people": ["id", "name", "address", "zip_code", "phone_number"],
-    "employee": ["id", "people_id", "company", "department", "role", "salary"]
-}))
 
