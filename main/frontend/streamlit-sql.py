@@ -20,10 +20,10 @@ for msg in st.session_state.messages:
 # if prompt:
 if prompt := st.chat_input(placeholder="Enter your SQL query here"):
     st.session_state.messages.append({"role": "user", "content": prompt})
-    print(prompt)
     st.chat_message("user").write(prompt)
     ## update it such that it takes the last entry, and then pass the content only.
     model_output_message = flant5.inference2(question_and_table=st.session_state.messages[-1]["content"])
+    ## append the newly generated message to the dictionary so that it can be retrieved properly in subsequent runs.
     st.session_state.messages.append({"role": "assistant", "content": model_output_message})
     st.chat_message("assistant").write(model_output_message)
     # user has provided prompt at this point. We want to take it and pass it into model
