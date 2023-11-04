@@ -1,4 +1,4 @@
-# text-to-sql
+# text-to-sql using LLM
 
 ## Summary
 
