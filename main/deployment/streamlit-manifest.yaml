@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: streamlit-llm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: streamlit-llm
+  template:
+    metadata:
+      labels:
+        app: streamlit-llm
+    spec:
+      containers:
+      - name: streamlit-llm
+        image: dodiyzw/streamlit-llm-app:latest
+        ports:
+        - containerPort: 8501 # port of the app
+

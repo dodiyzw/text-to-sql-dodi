@@ -1,0 +1,15 @@
+# https://kubernetes.io/docs/concepts/services-networking/service/
+# using service to expose my pod to outside the cluster
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-test-service
+spec:
+  selector:
+    app: streamlit-llm
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8501
+  type: LoadBalancer
