@@ -43,6 +43,6 @@ There are multiple ways to spin up this project, listed below.
 
   - While I have selected a relatively compressed LLM model, running the query still put substantial memory pressure on my local machine ( M1 Macbook Pro, 16GB RAM ). Future improve could consider hosting it in the cloud with more memory availability to avoid overwhelming local machines.
 
-  - The deployment process as of now is not smooth, as it requires port-forwarding to access the service deployed on the kubernetes cluster. It would be better to see if there are ways to expose the service that can be defined using a config script.
+  - The deployment process as of now is not smooth, as it requires port-forwarding to access the service deployed on the kubernetes cluster. It would be better to see if there are ways to expose the service that can be defined using a config script. Once this setup is available, it can then be deployed to the cloud (AWS/GCP) and make it accesible to the public.
 
   - The queries were tested by myself, which may introduce a bias as I have some prior experience writing SQL queries, and may not be representative of the ability of this project to support non-technical users in writing SQL queries. More feedback will need to be gathered. 
