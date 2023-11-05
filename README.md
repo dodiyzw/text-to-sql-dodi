@@ -2,13 +2,16 @@
 
 ## Summary
 
-Motivated by the desire to investigate what Large Language Model (LLM) can do for us, this project attempts to apply one of (Hugging Face's)[https://huggingface.co] open source LLM model to take in text input from user and returns a SQL command output through a chatbot interface, similar to Chat-GPT. 
+Motivated by the desire to investigate what Large Language Model (LLM) can do for us, this project attempts to apply one of [Hugging Face's](https://huggingface.co) open source LLM model to take in text input from user and returns a SQL command output through a chatbot interface, similar to Chat-GPT. 
 
 We often need to interact with databases in a corporate setting. LLM can supplement this process, especially for non-technical users that needs to query and retrieve certain data, but may not have the necessary domain knowledge yet to do so. 
 
 While Chat-GPT is openly accessible right now, the OpenAI GPT-3.5 model API is not free for use. On the other hand, Hugging Face has made a plethora of models available open-sourced, and it can be easily implemented using Python. This app does not require any API key.
 
-
+## Technology Used
+- Python ( Streamlit, Pytorch )
+- Docker
+- Kubernetes ( k3d, kubectl ) 
 
 ## Getting Started
 
