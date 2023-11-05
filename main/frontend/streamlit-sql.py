@@ -8,6 +8,7 @@ sys.path.append(new_directory)
 print(current_directory, "current directory is:::: ")
 
 import streamlit as st
+print(sys.path)
 from main.backend import flant5
 
 st.title("Text to SQL Generator")
