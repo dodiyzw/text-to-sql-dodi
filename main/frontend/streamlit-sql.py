@@ -5,11 +5,9 @@ current_directory = os.getcwd()
 # Navigate two directories back
 new_directory = os.path.abspath(os.path.join(current_directory, os.pardir, os.pardir))
 sys.path.append(new_directory)
-print(current_directory, "current directory is:::: ")
+sys.path.append(current_directory)
 
 import streamlit as st
-sys.path.append('/mount/src/text-to-sql-dodi')
-# from backend import flant5
 from main.backend import flant5
 
 st.title("Text to SQL Generator")
