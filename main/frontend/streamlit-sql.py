@@ -8,8 +8,8 @@ sys.path.append(new_directory)
 print(current_directory, "current directory is:::: ")
 
 import streamlit as st
-print(sys.path)
-from backend import flant5
+sys.path.append('/mount/src/text-to-sql-dodi')
+# from backend import flant5
 from main.backend import flant5
 
 st.title("Text to SQL Generator")
