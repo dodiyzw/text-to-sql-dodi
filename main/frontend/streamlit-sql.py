@@ -5,6 +5,7 @@ current_directory = os.getcwd()
 # Navigate two directories back
 new_directory = os.path.abspath(os.path.join(current_directory, os.pardir, os.pardir))
 sys.path.append(new_directory)
+print(current_directory, "current directory is:::: ")
 
 import streamlit as st
 from main.backend import flant5
