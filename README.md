@@ -8,10 +8,6 @@ We often need to interact with databases in a corporate setting. LLM can supplem
 
 While Chat-GPT is openly accessible right now, the OpenAI GPT-3.5 model API is not free for use. On the other hand, Hugging Face has made a plethora of models available open-sourced, and it can be easily implemented using Python. This app does not require any API key.
 
-## Example of Application in Action
-<img width="533" alt="image" src="https://github.com/dodiyzw/text-to-sql-dodi/assets/69558848/269b1df6-0a2f-4fe5-9b2b-6230d8546874">
-
-
 ## Technology Used
 - Python ( Streamlit, Pytorch )
 - Docker
@@ -50,4 +46,9 @@ There are multiple ways to spin up this project, listed below.
 
   - The deployment process as of now is not smooth, as it requires port-forwarding to access the service deployed on the kubernetes cluster. It would be better to see if there are ways to expose the service that can be defined using a config script. Once this setup is available, it can then be deployed to the cloud (i.e. AWS) and make it accesible to the public.
 
-  - The queries were tested by myself, which may introduce a bias as I have some prior experience writing SQL queries, and may not be representative of the ability of this project to support non-technical users in writing SQL queries. More feedback will need to be gathered. 
+  - The queries were tested by myself, which may introduce a bias as I have some prior experience writing SQL queries, and may not be representative of the ability of this project to support non-technical users in writing SQL queries. More feedback will need to be gathered.
+
+## Future Features 
+  - Allow "adding on to previous query"
+  - Add more examples or prompting guides
+  - Copy to clipboard
